@@ -150,7 +150,7 @@ st.text("STATUS ELEMENTS")
 
 st.success("This is a success element.")
 
-st.info("This is a info element.")
+st.info("This is a info elements.")
 
 st.warning("This is a warning element.")
 
