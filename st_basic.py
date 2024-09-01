@@ -114,44 +114,44 @@ if submit:
     aud=open("song.mp3",'rb')
     st.audio(aud,format='Audio/mp3')
 
-'''
+
 # graph
-st.markdown("_PLOTLY CHARTS_")
-df1=pd.read_excel("Cotton_Purchase_Details.xlsx")
+# st.markdown("_PLOTLY CHARTS_")
+# df1=pd.read_excel("Cotton_Purchase_Details.xlsx")
 
-st.dataframe(df1.head())
+# st.dataframe(df1.head())
 
-columns=list(df1.columns)
-target=st.selectbox("Choose a target",columns)
-col2=columns.copy()
-col2.remove(target)
+# columns=list(df1.columns)
+# target=st.selectbox("Choose a target",columns)
+# col2=columns.copy()
+# col2.remove(target)
 
-x_var=st.selectbox("Choose a X variable ",col2)
-y_var=st.selectbox("Choose a y variable ",col2)
+# x_var=st.selectbox("Choose a X variable ",col2)
+# y_var=st.selectbox("Choose a y variable ",col2)
 
-st.markdown("_SCATTER PLOT_")
-fig=px.scatter(df1,x=x_var,y=y_var,color=target)
-st.plotly_chart(fig)
+# st.markdown("_SCATTER PLOT_")
+# fig=px.scatter(df1,x=x_var,y=y_var,color=target)
+# st.plotly_chart(fig)
 
 
-data=pd.DataFrame(np.random.randn(100,3),columns=['A','B','C'])
-st.markdown("_LINE CHART_")
-st.line_chart(data,use_container_width=True)
+# data=pd.DataFrame(np.random.randn(100,3),columns=['A','B','C'])
+# st.markdown("_LINE CHART_")
+# st.line_chart(data,use_container_width=True)
 
-st.markdown("_BAR CHART_")
-st.bar_chart(data,use_container_width=True)
+# st.markdown("_BAR CHART_")
+# st.bar_chart(data,use_container_width=True)
 
-st.markdown("_AREA CHART_")
-st.area_chart(data,use_container_width=True)
+# st.markdown("_AREA CHART_")
+# st.area_chart(data,use_container_width=True)
 
-st.text("STATUS ELEMENTS")
+# st.text("STATUS ELEMENTS")
 
-st.success("This is a success element.")
+# st.success("This is a success element.")
 
-st.info("This is a info elements.")
+# st.info("This is a info elements.")
 
-st.warning("This is a warning element.")
+# st.warning("This is a warning element.")
 
-st.error("This is a error element.")
+# st.error("This is a error element.")
 
-st.exception("This is a exception element.")'''
+# st.exception("This is a exception element.")
