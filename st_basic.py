@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-import plotly.express as px
-import numpy as np
 st.set_page_config(page_title='Murugavel App')
 st.header("STREAMLIT")
 
@@ -116,7 +114,7 @@ if submit:
     aud=open("song.mp3",'rb')
     st.audio(aud,format='Audio/mp3')
 
-
+"""
 # graph
 st.markdown("_PLOTLY CHARTS_")
 df1=pd.read_excel("Cotton_Purchase_Details.xlsx")
@@ -156,4 +154,4 @@ st.warning("This is a warning element.")
 
 st.error("This is a error element.")
 
-st.exception("This is a exception element.")
+st.exception("This is a exception element.")"""
